@@ -1,11 +1,10 @@
 {
-  "name": "FinalProject.AdvancedJavaScript.team-1",
+  "name": "FinalProject.AdvancedJavaScript",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --open",
-    "build": "vite build --base=/xa8thaeD/",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -14,7 +13,7 @@
     "postcss-sort-media-queries": "^5.2.0",
     "vite": "^5.4.6"
   },
-  "author": "GoIT@2024 - team-1",
+  "author": "GoIT@2024 nataliya traxler",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.7.7",

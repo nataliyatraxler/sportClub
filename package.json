@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --open",
+    "build": "vite build --base=/sportClub/",
     "preview": "vite preview"
   },
   "devDependencies": {

@@ -1,0 +1,25 @@
+/* Normalize */
+@import url('./utils/normalize.css');
+
+/* Common styles */
+@import url('./root.css');
+@import url('./container.css');
+
+/* section styles */
+@import url('./socials.css');
+@import url('./header.css');
+@import url('./sct-hero.css');
+@import url('./home-block-2.css');
+@import url('./sct-exercises.css');
+@import url('./exercise-info.css');
+@import url('./footer.css');
+@import url('./mobile-menu.css');
+@import url('./sct-favorites.css');
+@import url('./quote-of-day.css');
+@import url('./group-list.css');
+@import url('./static-block.css');
+@import url('./modal/modal.css');
+@import url('./scroll-to-top.css');
+@import url('./loader.css');
+@import url('./rating-form.css');
+@import url('./timer.css');

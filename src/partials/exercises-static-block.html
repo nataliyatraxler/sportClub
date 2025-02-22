@@ -1,0 +1,35 @@
+<div class="static-image-wrapper">
+    <picture>
+        <!-- AVIF format (highest priority for browsers that support it) -->
+        <source srcset="./img/home-women-taking-break-m.avif 1x, ./img/home-women-taking-break-m@2x.avif 2x" type="image/avif" media="(max-width: 767px)">
+        <source srcset="./img/home-women-taking-break-p.avif 1x, ./img/home-women-taking-break-p@2x.avif 2x" type="image/avif" media="(min-width: 768px) and (max-width: 1440px)">
+        <source srcset="./img/home-women-taking-break.avif 1x, ./img/home-women-taking-break@2x.avif 2x" type="image/avif" media="(min-width: 1441px)">
+        
+        <!-- WebP format (second priority for browsers that don't support AVIF but support WebP) -->
+        <source srcset="./img/home-women-taking-break-m.webp 1x, ./img/home-women-taking-break-m@2x.webp 2x" type="image/webp" media="(max-width: 767px)">
+        <source srcset="./img/home-women-taking-break-p.webp 1x, ./img/home-women-taking-break-p@2x.webp 2x" type="image/webp" media="(min-width: 768px) and (max-width: 1440px)">
+        <source srcset="./img/home-women-taking-break.webp 1x, ./img/home-women-taking-break@2x.webp 2x" type="image/webp" media="(min-width: 1441px)">
+        
+        <!-- JPEG fallback (third priority for older browsers without AVIF or WebP support) -->
+        <source srcset="./img/home-women-taking-break-m.jpg 1x, ./img/home-women-taking-break-m@2x.jpg 2x" media="(max-width: 767px)">
+        <source srcset="./img/home-women-taking-break-p.jpg 1x, ./img/home-women-taking-break-p@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1440px)">
+        <source srcset="./img/home-women-taking-break.jpg 1x, ./img/home-women-taking-break@2x.jpg 2x" media="(min-width: 1441px)">
+        
+        <!-- Fallback <img> for very old browsers that don’t support <picture> -->
+        <img class="static-image" src="./img/home-women-taking-break.jpg" srcset="./img/home-women-taking-break.jpg 1x, ./img/home-women-taking-break@2x.jpg 2x" alt="Hero Image">
+    </picture>
+</div>
+<div class="static-block">
+    <div class="static-block-icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <use href="./img/icons.svg#icon-dumbbell"></use>
+        </svg>
+    </div>
+    <div class="static-block-body">
+        <h3 class="static-block-title">Today <span class="all-time"></span> / 110 min</h3>
+        <h3 class="static-block-title">You've burnt <span class="calories"></span> kcal today</h3>
+        <div class="static-block-small-text">Daily norm of sports</div>
+        <p class="static-block-text">
+            The World Health Organization recommends at least 150 minutes of moderate-intensity aerobic physical activity throughout the week for adults aged 18-64. However, what happens if we adjust that number to 110 minutes every day? While it might seem like a high number to hit, dedicating 110 minutes daily to sporting activities may offer unparalleled benefits to physical health, mental well-being, and overall quality of life. </p>
+    </div>
+</div>

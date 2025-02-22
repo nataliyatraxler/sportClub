@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="section-top">
+        <h2 class="section-title">Exercises</h2>
+        <form class="exercises-form visually-hidden">
+            <input
+                class="exercises-input"
+                name="search"
+                type="text"
+                placeholder="Search"
+                required
+            />
+            <button class="exercises-button" type="submit" data-start>
+                <svg
+                    class="search-icon"
+                    width="18"
+                    height="18"
+                    aria-label="search icon"
+                >
+                    <use href="./img/icons.svg#icon-search"></use>
+                </svg>
+            </button>
+            <button class="clear-button" type="button" aria-label="clear search">
+                <svg
+                    class="clear-icon"
+                    width="18"
+                    height="18"
+                    aria-label="clear icon"
+                >
+                    <use href="./img/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </form>
+        <ul class="exercises-menu-list">
+            <li class="exercises-menu-item">
+                <button class="exercises-menu-button active" id="musclesButton" data-name="muscles">
+                    Muscles
+                </button>
+            </li>
+            <li class="exercises-menu-item">
+                <button class="exercises-menu-button" id="bodyPartsButton" data-name="bodypart">
+                    Body parts
+                </button>
+            </li>
+            <li class="exercises-menu-item">
+                <button class="exercises-menu-button" id="equipmentButtons" data-name="equipment">
+                    Equipment
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>

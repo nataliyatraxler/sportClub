@@ -1,0 +1,65 @@
+.quote-of-day {
+    background: var(--color-main-dark);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.quote-icon-wrapper {
+    min-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--color-quote-ifill);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-icon-wrapper svg,
+.quote-title svg {
+    fill: var(--color-main-bg);
+}
+
+.quote-title {
+    font-size: 20px;
+    color: var(--color-main-bg);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blockquote {
+    margin: 8px 0 16px;
+}
+
+.blockquote-text {
+    text-align: left;
+    color: var(--color-quote-text);
+    font-size: 14px;
+    line-height: 1.286;
+} 
+
+.quote-author {
+    font-size: 14px;
+    line-height: 1.286;
+    color: var(--color-main-bg);
+    text-align: left;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .quote-of-day {
+        padding: 40px;
+        width: 400px;
+    }
+
+    .quote-title {
+        font-size: 24px;
+        line-height: 1.333;
+    }
+
+    .quote-author {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}

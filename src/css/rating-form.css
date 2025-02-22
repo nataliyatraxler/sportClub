@@ -1,0 +1,91 @@
+.rating-form__container {
+    padding: 40px 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .rating-form__container {
+        width: 430px;
+        padding: 40px;
+    }
+}
+
+form.rating-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-form__title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--color-popup-varname);
+}
+
+.rating-form__email {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .rating-form__email {
+        margin-top: 32px;
+    }
+}
+
+.rating-form__comment {
+    margin-top: 10px;
+    height: 93px;
+    border-radius: 15px;
+    resize: none;
+}
+
+@media screen and (min-width: 768px) {
+    .rating-form__comment {
+        margin-top: 16px;
+        height: 106px;
+    }
+}
+
+.rating-form__send {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .rating-form__send {
+        margin-top: 32px;
+    }
+}
+
+.rating-form__rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-top: 8px;
+}
+
+.rating-form__rating label {
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.rating-form__value {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--color-popup-main);
+}
+
+.rating-form__rating svg {
+    padding: 2px;
+}
+
+.rating-form label {
+    cursor: pointer;
+}
+
+.rating-form__rating .active .rating-star__empty{
+    fill: var(--color-stars-full);
+}

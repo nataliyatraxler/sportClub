@@ -1,0 +1,240 @@
+/* #region Exercise info */
+.exercise-info__wrapper {
+    padding: 40px 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .exercise-info__wrapper {
+        width: 704px;
+        padding: 32px;
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .exercise-info__wrapper {
+        width: 708px;
+    }
+}
+
+.exercise-info__img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .exercise-info__img {
+        max-width: 270px;
+        max-height: 259px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .exercise-info__content {
+        flex-basis: 338px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .exercise-info__content {
+        flex-basis: 342px;
+    }
+}
+
+.exercise-info__title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-popup-main);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .exercise-info__title {
+        font-size: 24px;
+        line-height: 1.33;
+        margin-bottom: 8px;
+    }
+}
+
+.exercise-info__title::first-letter {
+    text-transform: uppercase;
+}
+
+.exercise-info__params {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0;
+    border-top: 1px solid var(--color-popup-line);
+    border-bottom: 1px solid var(--color-popup-line);
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .exercise-info__params {
+        gap: 16px;
+        margin-bottom: 16px;
+        padding: 8px 0;
+    }
+}
+
+.exercise-info__params li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 4px;
+
+    color: var(--color-popup-main);
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 1.29;
+    font-weight: 500;
+}
+
+.exercise-info__params li span {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--color-popup-varname);
+    font-weight: 400;
+}
+
+.exercise-info__description {
+    font-size: 14px;
+    line-height: 1.29;
+    color: var(--color-popup-txt);
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    .exercise-info__description {
+        line-height: 1.5;
+    }
+}
+
+.exercise-info__actions {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .exercise-info__actions {
+        flex: 1;
+        flex-direction: row;
+        justify-content: end;
+        gap: 7px;
+        margin-top: 0;
+    }
+}
+
+.exercise-info__button {
+    padding: 11px 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: var(--transition);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+}
+
+@media only screen and (min-width: 768px) {
+    .exercise-info__button {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+.add-to-favorite-btn {
+    color: var(--color-main-dark);
+}
+
+.add-to-favorite-btn:hover {
+    background-color: transparent;
+    color: var(--color-popup-main);
+    outline: 1px solid var(--color-popup-main);
+}
+
+.add-to-favorite-btn:hover svg {
+    fill: var(--color-popup-main);
+}
+
+.give-rating-btn {
+    border: 1px solid var(--color-popup-main);
+    background: transparent;
+    color: var(--color-popup-main);
+}
+
+@media screen and (min-width: 768px) {
+    .give-rating-btn {
+        padding: 11px 22px;
+    }
+}
+
+.give-rating-btn:hover {
+    background-color: var(--color-popup-main);
+    color: var(--color-main-dark);
+}
+
+/* Rating styles */
+.exercise-info__rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .exercise-info__rating {
+        margin-bottom: 16px;
+    }
+}
+
+.exercise-info__rating-stars {
+    display: flex;
+    gap: 2px;
+}
+
+.exercise-info__rating-stars svg {
+  padding: 2px;
+}
+
+.exercise-info__rating-text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-popup-main);
+  font-weight: 400;
+}
+
+.rating-star__empty {
+    fill: var(--color-stars-empty);
+}
+
+.rating-star__full {
+    fill: var(--color-stars-full);
+}
+
+.remove-favorite {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.remove-favorite__icon {
+    fill: var(--color-main-dark);
+}
+
+/* #endregion */

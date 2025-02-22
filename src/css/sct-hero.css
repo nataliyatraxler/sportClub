@@ -1,0 +1,320 @@
+/* Глобальні стилі */
+
+.tags span {
+    padding: 5px 10px;
+    display: block;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    border: 1px solid #242424;
+}
+
+.mobile-tags,
+.desktop-tags {
+    display: none;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    color: #ffffff;
+    border-radius: 60px;
+    object-fit: cover;
+}
+
+.small-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* MOBILE  */
+@media screen and (max-width: 767px) {
+    .desktop-tags {
+        display: none;
+    }
+
+    .hero-first-part {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+        position: relative;
+        text-align: left;
+    }
+
+    .hero-content h2 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        width: 335px;
+        color: #242424;
+        font-size: 38px;
+        line-height: 44px;
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        margin: 0 auto;
+    }
+
+    .hero-content p {
+        width: 335px;
+        font-size: 14px;
+        line-height: 18px;
+        color: #242424;
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    .hero-content .highlight {
+        font-style: italic;
+    }
+
+    .tag-image-wrapper {
+        display: none;
+    }
+
+    .icon {
+        width: 38px;
+        height: 38px;
+        fill: #000;
+        margin-right: 30px;
+    }
+
+    .mobile-tags {
+        display: flex;
+        gap: 8px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .hero-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-image img {
+        color: #ffffff;
+        border-radius: 60px;
+        object-fit: cover;
+    }
+
+    .small-image {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+}
+
+/*  TABLET  */
+@media screen and (min-width: 768px) {
+    .desktop-tags {
+        display: none;
+    }
+
+    .small-image {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 76px;
+        padding-bottom: 29px;
+    }
+
+    .hero-first-part {
+        margin-bottom: 32px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+        position: relative;
+        text-align: left;
+    }
+
+    .hero-content h2 {
+        width: 639px;
+        text-align: left;
+        height: 148px;
+        font-size: 74px;
+        line-height: 74px;
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        top: 176px;
+        left: 32px;
+        margin: 0;
+    }
+
+    .hero-content p {
+        max-width: 528px;
+        font-size: 18px;
+        line-height: 24px;
+        color: #242424;
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+
+    .hero-content .highlight {
+        font-style: italic;
+    }
+
+    .icon {
+        width: 59px;
+        height: 59px;
+        fill: #000;
+        margin-right: 0px;
+    }
+
+    .mobile-tags {
+        display: flex;
+        gap: 8px;
+        font-size: 16px;
+        line-height: 24px;
+        justify-content: right;
+        margin-top: 16px;
+    }
+
+    .hero-image img {
+        color: #ffffff;
+        border-radius: 60px;
+        object-fit: cover;
+    }
+}
+
+/* DESKTOP  */
+@media screen and (min-width: 1440px) {
+    .text-content {
+        max-width: 60%;
+    }
+
+    .hero {
+        padding-top: 68px;
+        padding-bottom: 64px;
+    }
+
+    .hero-first-part {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .right-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 16px;
+    }
+
+    .hero-content {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+        position: relative;
+    }
+
+    .hero-content h2 {
+        width: 639px;
+        text-align: left;
+        height: 148px;
+        font-size: 74px;
+        line-height: 74px;
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        top: 176px;
+        left: 32px;
+        margin: 0;
+    }
+
+    .hero-content p {
+        width: 528px;
+        font-size: 18px;
+        line-height: 24px;
+        color: #242424;
+        font-weight: 400;
+        letter-spacing: -0.02em;
+    }
+
+    .icon {
+        width: 59px;
+        height: 59px;
+        fill: #000;
+        top: 182px;
+        left: 32px;
+        margin-right: 8px;
+    }
+
+    .tag {
+        background-color: #f2f4f5;
+        border-radius: 30px;
+        padding: 2px 6px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #242424;
+        text-align: center;
+        display: inline-block;
+        font-weight: 400;
+    }
+
+    .mobile-tags {
+        display: none;
+    }
+
+    .desktop-tags {
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+        justify-content: end;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 350px;
+        color: #ffffff;
+        border-radius: 60px;
+        object-fit: cover;
+    }
+
+    .tag-image-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 32px;
+    }
+
+    .small-image {
+        display: inline-block;
+        top: -130px;
+        right: 0;
+        width: 168px;
+        height: 100px;
+        border-radius: 20px;
+        overflow: hidden;
+        z-index: 10;
+    }
+}
+
+.small-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+

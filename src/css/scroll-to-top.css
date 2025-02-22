@@ -1,0 +1,38 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: var(--color-main-dark);
+    border: 1px solid var(--color-mm-social-border);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.scroll-to-top svg {
+    fill: var(--color-main-light);
+}
+
+@media screen and (min-width: 768px) {
+    .scroll-to-top {
+        width: 100px;
+        height: 100px;
+    }
+
+    .scroll-to-top svg {
+        width: 33px;
+        height: 33px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .scroll-to-top {
+        bottom: 0;
+    }
+}

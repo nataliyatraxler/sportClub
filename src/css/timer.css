@@ -1,0 +1,90 @@
+.exercise-btn-block {
+    display: flex;
+    flex-direction: column;
+    /*align-items: ;*/
+    justify-content: flex-end;
+    gap: 0;
+}
+
+.timer-block {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+.exercise-info__actions {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+
+    .exercise-btn-block {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .timer-block {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .exercise-info__actions {
+        flex: 1;
+        flex-direction: row;
+        justify-content: end;
+        gap: 7px;
+    }
+}
+
+.start-btn {
+    outline: 1px solid green;
+    background: green;
+    color: var(--color-popup-main);
+}
+
+.stop-btn {
+    outline: 1px solid red;
+    background: red;
+    color: var(--color-popup-main);
+}
+
+
+.timer {
+    font-size: 30px;
+}
+
+.start-btn:hover {
+    background: forestgreen;
+    color: var(--color-popup-main);
+}
+
+.stop-btn:hover {
+    background: darkred;
+    color: var(--color-popup-main);
+}
+
+.remove-favorite {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.remove-favorite__icon {
+    fill: var(--color-main-dark);
+}
+
+.all-time {
+    color: red;
+}
+
+/* #endregion */

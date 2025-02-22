@@ -1,0 +1,65 @@
+<div class="hero">
+    <div class="container">
+        <div class="hero-first-part">
+            <div class="hero-content">
+                <h2>
+                    <svg class="icon" width="59" height="59">
+                        <use xlink:href="./img/icons.svg#icon-sun"></use>
+                    </svg>
+                    Get <span class="highlight">Body</span> in shape, Stay
+                    healthy
+                </h2>
+                <p>
+                    Transform your physique and embrace a healthier lifestyle
+                    with our comprehensive fitness and nutrition support.
+                </p>
+            </div>
+
+            <!-- Контейнер для маленької картинки і тегів -->
+            <div class="tag-image-wrapper">
+                <div class="small-image">
+                    <img src="./img/header-women.jpg" alt="Small Image" />
+                </div>
+
+                <!-- Теги для десктопа зверху -->
+                <div class="tags desktop-tags">
+                    <span>#Sport</span>
+                    <span>#Healthy</span>
+                    <span>#Workout</span>
+                    <span>#Diet</span>
+                </div>
+            </div>
+        </div>
+        <!-- Головне зображення (герой-картинка) -->
+        <div class="hero-image">
+            <picture>
+                <!-- AVIF format (highest priority for browsers that support it) -->
+                <source srcset="./img/hero-m.avif 1x, ./img/hero-m@2x.avif 2x" type="image/avif" media="(max-width: 767px)">
+                <source srcset="./img/hero-p.avif 1x, ./img/hero-p@2x.avif 2x" type="image/avif" media="(min-width: 768px) and (max-width: 1440px)">
+                <source srcset="./img/hero.avif 1x, ./img/hero@2x.avif 2x" type="image/avif" media="(min-width: 1441px)">
+                
+                <!-- WebP format (second priority for browsers that don't support AVIF but support WebP) -->
+                <source srcset="./img/hero-m.webp 1x, ./img/hero-m@2x.webp 2x" type="image/webp" media="(max-width: 767px)">
+                <source srcset="./img/hero-p.webp 1x, ./img/hero-p@2x.webp 2x" type="image/webp" media="(min-width: 768px) and (max-width: 1440px)">
+                <source srcset="./img/hero.webp 1x, ./img/hero@2x.webp 2x" type="image/webp" media="(min-width: 1441px)">
+                
+                <!-- JPEG fallback (third priority for older browsers without AVIF or WebP support) -->
+                <source srcset="./img/hero-m.jpg 1x, ./img/hero-m@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="./img/hero-p.jpg 1x, ./img/hero-p@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1440px)">
+                <source srcset="./img/hero.jpg 1x, ./img/hero@2x.jpg 2x" media="(min-width: 1441px)">
+                
+                <!-- Fallback <img> for very old browsers that don’t support <picture> -->
+                <img src="./img/hero.jpg" srcset="./img/hero.jpg 1x, ./img/hero@2x.jpg 2x" alt="Hero Image">
+            </picture>
+        </div>        
+
+        <!-- Теги для мобільної версії знизу -->
+        <div class="tags mobile-tags">
+            <span>#Sport</span>
+            <span>#Healthy</span>
+            <span>#Workout</span>
+            <span>#Diet</span>
+        </div>
+
+    </div>
+</div>
